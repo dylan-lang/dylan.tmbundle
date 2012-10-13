@@ -109,7 +109,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>^(define)\s+((?:(?:sealed|open|inline[-a-z]*)\s+)+)?(?:(domain)|(method|function|generic)\s+)([\\_A-Za-z0-9/!?*%$\-\&lt;\&gt;=]*)</string>
+			<string>^(define)\s+((?:(?:sealed|open|sideways|dynamic|compiler-sideways|compiler-open|inline[-a-z]*)\s+)+)?(?:(domain)|(method|function|generic)\s+)([\\_A-Za-z0-9/!?*%$\-\&lt;\&gt;=]*)</string>
 			<key>name</key>
 			<string>meta.function.dylan</string>
 		</dict>
@@ -138,7 +138,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>^(define)\s+((?:(?:sealed|open|abstract|concrete|primary|free)\s+)+)?(class)\s+([_A-Za-z0-9/!?*%$\-\&lt;\&gt;]*)</string>
+			<string>^(define)\s+((?:(?:sealed|open|abstract|concrete|primary|free|dynamic|compiler-open)\s+)+)?(class)\s+([_A-Za-z0-9/!?*%$\-\&lt;\&gt;]*)</string>
 			<key>name</key>
 			<string>meta.class.dylan</string>
 		</dict>
