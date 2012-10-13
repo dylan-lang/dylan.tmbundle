@@ -14,6 +14,27 @@
 	<array>
 		<dict>
 			<key>begin</key>
+			<string>([\x{21}-\x{39}\x{3B}-\x{7E}]+)(:)\s*</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.mail</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.separator.key-value.mail</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>^(?![ \t\v])</string>
+			<key>name</key>
+			<string>meta.header.mail</string>
+		</dict>
+		<dict>
+			<key>begin</key>
 			<string>(?&lt;=^|\s|\()/\*</string>
 			<key>end</key>
 			<string>\*/</string>
